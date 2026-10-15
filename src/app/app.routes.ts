@@ -3,7 +3,7 @@ import { Tablero } from './tablero/tablero';
 import { Acerca } from './acerca/acerca';
 import { S03 } from './s03/s03';
 import { FrutasComponent } from './frutas/frutas';
-import { Inventario } from './inventario/inventario';
+import { Inventario } from './parcial1/inventario';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'tablero', pathMatch: 'full' },
@@ -12,5 +12,6 @@ export const routes: Routes = [
   { path: 'acerca', component: Acerca },
   { path: 'frutas', component: FrutasComponent },
   { path: 'inventario', component: Inventario },
+  { path: 'parcial1', component: Inventario },
   { path: '**', redirectTo: 'tablero' },
 ];
