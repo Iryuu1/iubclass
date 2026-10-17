@@ -4,6 +4,7 @@ import { Acerca } from './acerca/acerca';
 import { S03 } from './s03/s03';
 import { FrutasComponent } from './frutas/frutas';
 import { Inventario } from './parcial1/inventario';
+import { Pedido } from './taller03/pedido';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'tablero', pathMatch: 'full' },
@@ -13,5 +14,6 @@ export const routes: Routes = [
   { path: 'frutas', component: FrutasComponent },
   { path: 'inventario', component: Inventario },
   { path: 'parcial1', component: Inventario },
+  { path: 'taller03', component: Pedido },
   { path: '**', redirectTo: 'tablero' },
 ];
